@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml" />
+  <title>Seller Flow</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-blue-950 via-blue-900 to-black text-white">
+  <!-- Navbar -->
+  <header class="bg-blue-950/95 shadow sticky top-0 z-50">
+    <nav class="container mx-auto flex items-center justify-between py-4 px-6 md:px-12">
+      <div class="flex items-center gap-3 text-xl font-bold text-cyan-200 tracking-tight">
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-[8px] bg-gradient-to-br from-white via-blue-100 to-cyan-100 border-2 border-cyan-400 shadow-lg">
+          <img src="favicon.svg" alt="Logo" class="w-6 h-6 object-contain" />
+        </span>
+        <span>Seller Flow</span>
+      </div>
+      <ul class="flex space-x-6">
+        <li><a href="#about" class="hover:text-cyan-300 transition-colors duration-300">About</a></li>
+        <li><a href="#features" class="hover:text-cyan-300 transition-colors duration-300">Features</a></li>
+        <li><a href="#contact-us" class="hover:text-cyan-300 transition-colors duration-300">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="container mx-auto px-4 py-16 text-center">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-cyan-200">About</h2>
+    <img src="main.png" alt="Seller Flow dashboard illustration" class="mx-auto my-8 rounded-2xl shadow-lg w-full max-w-3xl h-auto" loading="lazy">
+    <p class="max-w-4xl mx-auto text-blue-100 text-xl sm:text-2xl md:text-3xl mb-6 text-justify leading-relaxed">Seller Flow is a unified SaaS platform for Amazon sellers.</p>
+    <p class="max-w-4xl mx-auto text-blue-100 text-xl sm:text-2xl md:text-3xl text-justify leading-relaxed">Seller Flow empowers Amazon sellers to streamline every aspect of their business—from real-time inventory management and order processing to profit analytics and customer messaging—within a single, intuitive dashboard. By automating routine tasks and centralizing critical data, Seller Flow helps small teams focus on growth and maximize profitability. The platform is under continuous development, with regular updates and new features planned to further empower Amazon sellers on their journey to success.</p>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="container mx-auto px-4 py-16 text-center">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-10 text-cyan-200">Features</h2>
+    <div class="text-lg sm:text-xl md:text-2xl max-w-4xl mx-auto space-y-10 text-justify">
+      <div>
+        <h3 class="text-xl sm:text-2xl md:text-3xl font-semibold mb-2 text-cyan-100">Inventory Management</h3>
+        <p class="text-blue-100 leading-relaxed">With Seller Flow’s Inventory Management, you gain real-time visibility into stock levels across all your Amazon marketplaces. Automatic SKU merging intelligently consolidates duplicate listings, preventing oversells and reducing manual reconciliation. Set custom low-stock alerts and reorder thresholds to ensure you never run out of your top-selling items. Predictive restocking suggestions use historical sales data to help you optimize replenishment timing and avoid costly stockouts.</p>
+      </div>
+      <div>
+        <h3 class="text-xl sm:text-2xl md:text-3xl font-semibold mb-2 text-cyan-100">Order Synchronization</h3>
+        <p class="text-blue-100 leading-relaxed">Our Order Synchronization feature centralizes every incoming order into a single dashboard, no matter how many marketplaces or regions you sell in. Orders are fetched in real-time via the SP-API, with status updates (pending, unshipped, shipped) automatically reflected in Seller Flow. Built-in shipment tracking integration keeps your customers informed and minimizes support inquiries. You can also batch-process order confirmations and cancellations to streamline your fulfillment workflows.</p>
+      </div>
+      <div>
+        <h3 class="text-xl sm:text-2xl md:text-3xl font-semibold mb-2 text-cyan-100">Profit Analytics</h3>
+        <p class="text-blue-100 leading-relaxed">Profit Analytics delivers a comprehensive financial overview by combining product costs, Amazon fees, shipping expenses, and other overheads. Interactive dashboards break down your net margins by SKU, marketplace, and time period, so you always know which products drive profitability. Customizable reports and export options make it easy to share insights with your team or investors. Armed with granular data, you can make informed pricing and inventory decisions that maximize your bottom line.</p>
+      </div>
+      <div>
+        <h3 class="text-xl sm:text-2xl md:text-3xl font-semibold mb-2 text-cyan-100">Customer Messaging</h3>
+        <p class="text-blue-100 leading-relaxed">Seller Flow’s Customer Messaging unifies all buyer communications—emails, Amazon Buyer-Seller messages, and return inquiries—into one intuitive inbox. Smart templates and canned responses help you reply faster while maintaining a personal touch. Automated tagging and SLA tracking ensure no message falls through the cracks, improving your response times and seller rating. All conversations are logged and searchable, giving you full context to resolve issues and build customer loyalty.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact-us" class="container mx-auto px-4 py-16 text-center">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-cyan-200">Contact Us</h2>
+    <form id="contact-form" class="max-w-xl mx-auto bg-blue-950/60 rounded-xl p-8 shadow-lg space-y-6">
+      <div class="text-left">
+        <label for="email" class="block mb-2 text-cyan-100 font-semibold">Email</label>
+        <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg bg-blue-900 text-white border border-blue-800 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition text-base sm:text-lg" placeholder="your@email.com">
+      </div>
+      <div class="text-left">
+        <label for="message" class="block mb-2 text-cyan-100 font-semibold">Message</label>
+        <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 rounded-lg bg-blue-900 text-white border border-blue-800 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition text-base sm:text-lg" placeholder="Type your message..."></textarea>
+      </div>
+      <button type="submit" id="send-btn" class="w-full py-3 rounded-lg bg-cyan-600 hover:bg-cyan-700 transition text-white font-bold text-lg sm:text-xl flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed">
+        <span id="btn-text">Send</span>
+        <svg id="spinner" class="animate-spin h-5 w-5 text-white hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path></svg>
+      </button>
+    </form>
+    <script>
+      const form = document.getElementById('contact-form');
+      const btn = document.getElementById('send-btn');
+      const btnText = document.getElementById('btn-text');
+      const spinner = document.getElementById('spinner');
+      form.onsubmit = function(e) {
+        e.preventDefault();
+        btn.disabled = true;
+        btnText.textContent = 'Sending...';
+        spinner.classList.remove('hidden');
+        setTimeout(() => {
+          btn.disabled = false;
+          btnText.textContent = 'Send';
+          spinner.classList.add('hidden');
+          form.reset();
+        }, 2000);
+      };
+    </script>
+  </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-950/95 py-8 mt-16 text-white">
+      <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="text-center md:text-left">
+          <div class="font-semibold">NovaLum LLC</div>
+          <div class="text-blue-100">30 N Gould St Ste R, Sheridan, WY 82801, USA</div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-4 text-cyan-200 text-lg">
+          <button onclick="openModal('terms')" class="hover:underline focus:outline-none cursor-pointer">Terms of Business</button>
+          <span class="hidden md:inline">|</span>
+          <button onclick="openModal('privacy')" class="hover:underline focus:outline-none cursor-pointer">Privacy Policy</button>
+        </div>
+      </div>
+      <div class="mt-6 text-center text-blue-200 text-sm">
+        <span id="copyright"></span>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal-overlay" class="fixed inset-0 bg-black/70 flex items-center justify-center z-50 hidden">
+      <div class="bg-blue-950 rounded-xl shadow-xl max-w-2xl w-full mx-4 p-8 relative text-left">
+        <button onclick="closeModal()" class="absolute top-4 right-4 text-cyan-200 hover:text-cyan-400 text-2xl font-bold focus:outline-none">&times;</button>
+        <h3 id="modal-title" class="text-2xl font-bold mb-4 text-cyan-100"></h3>
+        <div id="modal-content" class="text-blue-100 leading-relaxed text-justify" style="max-height:60vh;overflow-y:auto;"></div>
+      </div>
+    </div>
+    <script>
+      // Modal open/close logic
+      function openModal(type) {
+        const overlay = document.getElementById('modal-overlay');
+        const title = document.getElementById('modal-title');
+        const content = document.getElementById('modal-content');
+        if (type === 'terms') {
+          title.textContent = 'Terms of Business';
+          content.innerHTML = '<span class="text-blue-200">Loading...</span>';
+          overlay.classList.remove('hidden');
+          fetch('terms-of-service.html').then(r => r.text()).then(text => {
+            content.innerHTML = text;
+          });
+        } else if (type === 'privacy') {
+          title.textContent = 'Privacy Policy';
+          content.innerHTML = '<span class="text-blue-200">Loading...</span>';
+          overlay.classList.remove('hidden');
+          fetch('privacy-policy.html').then(r => r.text()).then(text => {
+            content.innerHTML = text.replace(/\n/g, '<br>');
+          });
+        }
+      }
+      function closeModal() {
+        document.getElementById('modal-overlay').classList.add('hidden');
+      }
+      // Close modal on overlay click
+      document.addEventListener('click', function(e) {
+        const overlay = document.getElementById('modal-overlay');
+        const modal = overlay.querySelector('div');
+        if (!overlay.classList.contains('hidden') && e.target === overlay) {
+          closeModal();
+        }
+      });
+      // Close modal on Esc
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeModal();
+      });
+      // Set copyright year
+      document.getElementById('copyright').textContent = `© ${new Date().getFullYear()} NovaLum LLC`;
+    </script>
+</body>
+</html>
